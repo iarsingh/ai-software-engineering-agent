@@ -1,5 +1,12 @@
 # AI Software Engineering Agent
 
+## Overview
+
+A small agent service that takes a coding task, drafts a plan and a patch, and names the tests that should cover it. The `POST /agent/run` endpoint returns the draft, while `git push` and merge requests are refused, so nothing reaches a repository without a person. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local lab with tests; it uses no hosted model, and apply stays off until a human approves.
+
 <!-- project-guide:start -->
 ## Project guide
 
